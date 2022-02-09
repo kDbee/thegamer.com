@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Gamer</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,700;1,300;1,400;1,500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <section class="sub-header">
+        <nav>
+            <a href="index.html"><img src="images/logo.jpg" ></a>
+            <div class="nav-links" id="navLinks">
+                <i class="fa fa-times-circle" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="services.html">SERVICES</a></li>
+                    <li><a href="about.html">ABOUT</a></li>
+                    <li><a href="contact.html">CONTACT</a></li>
+                </ul>
+            </div>
+            <i class="fa fa-bars" onclick="showMenu()"></i>
+        </nav>
+            <h1>Contact Us</h1>
+    </section>
+
+
+
+  <!------Contact US---->
+
+    <section class="location">
+
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3970.346812423361!2d-0.2222350853255744!3d5.662883734139949!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xfdf9d6cdac8f673%3A0xec250310f5bad0cc!2sTillySark%20Residence!5e0!3m2!1sen!2sgh!4v1643310152674!5m2!1sen!2sgh" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+
+
+    </section>
+
+
+    <section class="contact-us">
+        <div class="row">
+            <div class="contact-col">
+                <div>
+                    <i class="fa fa-home"></i>
+                    <span>
+                        <h5>Haatso-Atomic Road, TillySark Residence</h3>
+                        <p>Accra, Ghana</p>
+                    </span>
+                </div>
+
+                <div>
+                    <i class="fa fa-phone"></i>
+                    <span>
+                        <h5>+233 0302104</h3>
+                        <p>Monday to Friday</p>
+                    </span>
+                </div>
+
+                <div>
+                    <i class="fa fa-clock-o"></i>
+                    <span>
+                        <h5>Working Hours</h3>
+                        <p>9am to 3pm</p>
+                    </span>
+                </div>
+
+                <div>
+                    <i class="fa fa-envelope-o"></i>
+                    <span>
+                        <h5>kwakubondzi6@gmail.com</h3>
+                        <p>email us your query</p>
+                    </span>
+                </div>
+
+            </div>
+
+            <div class="contact-col">
+
+                <form action="form-handler.php" method="post">
+                    <input type="text" name = "name" placeholder="Enter your name"required>
+                    <input type="email"  name = "email" placeholder="Enter your name"required>
+                    <input type="text"  name = "subject" placeholder="Enter your subject"required>
+                    <textarea rows="9"  name = "message"></textarea>
+                    <button type="submit" class="hero-btn red-btn">Send Message</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    
+
+  
+
+    <!----Footer-->
+
+    <section class="footer">
+        <h3>About Us</h3>
+        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
+           Lorem Ipsum has been the industry's standard dummy text</p>
+       
+       <div class="icons">
+           <i class="fa fa-facebook"></i>
+           <i class="fa fa-instagram"></i>
+           <i class="fa fa-twitter"></i>
+           <i class="fa fa-linkedin"></i>
+       </div>
+       <p>Made by <i class="fa fa-heart-o"></i> Just Dbee</p>
+    </section>
+
+
+
+    <!----Javascript for read more-->
+    <script>
+        function myFunction() {
+            var dots = document.getElementById("dots");
+            var moreText = document.getElementById("more");
+            var btnText = document.getElementById("myBtn");
+
+            if (dots.style.display === "none") {
+                dots.style.display = "inline";
+                btnText.innerHTML = "Read more"; 
+                moreText.style.display = "none";
+            } 
+            else {
+                dots.style.display = "none";
+                btnText.innerHTML = "Read less"; 
+                moreText.style.display = "inline";
+            }   
+        }    
+    </script>
+
+
+
+    <!-----Javascript for Toggle Menu----->
+     <script>
+        var navLinks = document.getElementById("navLinks");
+        function showMenu(){
+            navLinks.style.right = "0";
+        }
+        function hideMenu(){
+            navLinks.style.right = "-200px";
+        }
+   </script>
+    
+</body>
+</html>
